@@ -1,0 +1,26 @@
+{
+    "name": "ndogithub/phpTips",
+    "description": "Conhecendo tecnicas de desenvolvimento em PHP",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Carvalho",
+            "email": "",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+      "vendor-dir": "vendor"
+    },
+    "autoload": {
+
+    },
+    "psr-4": {
+      "Source\\":"source/"
+    },
+    "files": [ "source/Config.php" ],
+    "require": {
+      "phpmailer/phpmailer": "6.0.*"
+    }
+}
