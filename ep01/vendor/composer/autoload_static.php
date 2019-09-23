@@ -6,17 +6,37 @@ namespace Composer\Autoload;
 
 class ComposerStaticInita531cb2633783a830df4da903aa53690
 {
+    public static $files = array (
+        '3efbb8b602c763842e408e2437071558' => __DIR__ . '/../..' . '/source/Config.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Source\\' => 7,
+        ),
         'P' => 
         array (
             'PHPMailer\\PHPMailer\\' => 20,
         ),
+        'C' => 
+        array (
+            'CoffeeCode\\Router\\' => 18,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Source\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/source',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'CoffeeCode\\Router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/router/src',
         ),
     );
 
