@@ -14,6 +14,9 @@ class WebController
     {
         echo "Método Contato";
         var_dump($data);
+
+        $url = URL_BASE;
+        require __DIR__."/../../views/contact.php";
     }
 
     public function post($data)

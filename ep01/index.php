@@ -17,7 +17,7 @@ $router->namespace("Source\App");
 $router->group(null); //home
 $router->get("/", "WebController:home");
 $router->get("/{filter}", "WebController:home");
-$router->get("/contato", "WebController:contact");
+
 
 /*
 *Blog
@@ -26,6 +26,20 @@ $router->group("blog");
 $router->get("/", "WebController:blog");
 $router->get("/{post_uri}", "WebController:post");
 $router->get("/categoria/{cat_uri}", "WebController:category");
+
+/*
+*Contato
+*/
+$router->group("contato");
+$router->get("/", "WebController:contact");
+$router->get("/{sector}", "WebController:contact");//sempre coloque regras dinamicas como essa antes das fixas
+$router->get("/suporte", "WebController:support");//regra fixa
+
+/*
+*ADMIN
+*/
+$router->group("admin");
+$router->get("/", "AdminController:home");
 
 
 $router->dispatch();
